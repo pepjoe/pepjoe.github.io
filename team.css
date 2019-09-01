@@ -7,6 +7,16 @@
     
 }
 
+#giftapadlogo {
+    float: left;
+    width: 35%;
+}
+
+#menu {
+    float: right;
+    width: 55%;
+}
+
 
 
 
@@ -37,7 +47,7 @@ ul{
 /*Style 'menu' label button and hide it by default*/
 
 @media screen and (max-width: 44em) {
-  nav[role="full-horizontal"] {
+  #menu.nav[role="full-horizontal"] {
     ul > li {
       width: 100%;
     }
