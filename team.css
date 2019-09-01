@@ -35,44 +35,59 @@ ul{
 
 /*Responsive Styles*/
 /*Style 'menu' label button and hide it by default*/
-.show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background:	#FF1493;
+body { 
+    -webkit-animation: bugfix infinite 1s; 
+  }
+  @-webkit-keyframes bugfix { 
+    from { padding: 0; } 
+    to { padding: 0; } 
+  }
+  
+  /* default checkbox */
+  input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  label { 
+    cursor: pointer;
+    user-select: none;
+  }
 
-    text-align: center;
-    padding: 10px 0;
-    display: none;
-}
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
-}
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-}
+  nav[role="custom-dropdown"] {
+    label {
+      display: none;
+    }
+  }
 
-@media screen and (max-width : 760px){
-    /*Make dropdown links appear inline*/
-    ul {
-        position: static;
+  @media screen and (max-width: 44em) {
+    nav[role="custom-dropdown"] {
+      ul {
+        display: none;
+        height: 100%;
+      }
+  
+      label {
+        position: relative;
         display: block;
-    }
-    /*Create vertical spacing*/
-    li {
-        margin-bottom: 1px;
-    }
-    /*Make all menu links full width*/
-    ul li, li a {
         width: 100%;
+      }
+  
+      label:after {
+          position: absolute;
+          content: "\2261";
+      }
+      
+      input:checked ~ ul {
+        display: block;
+      
+        > li {
+          width: 100%;
+        }        
+      }
     }
-    /*Display 'menu' link*/
-    .show-menu {
-        display:block;
-    }
-}
+  }
 
 /* Header */
 
