@@ -34,22 +34,7 @@ ul{
 }
 
 /*Responsive Styles*/
-/*Style 'menu' label button and hide it by default*/
-body { 
-    -webkit-animation: bugfix infinite 1s; 
-  }
-  @-webkit-keyframes bugfix { 
-    from { padding: 0; } 
-    to { padding: 0; } 
-  }
-  
-  /* default checkbox */
-  input[type=checkbox] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  
+/*Style 'menu' label button and hide it by default*/ 
   label { 
     cursor: pointer;
     user-select: none;
