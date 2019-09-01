@@ -34,46 +34,16 @@ ul{
 }
 
 /*Responsive Styles*/
-/*Style 'menu' label button and hide it by default*/ 
-  label { 
-    cursor: pointer;
-    user-select: none;
-  }
+/*Style 'menu' label button and hide it by default*/
 
-  nav[role="custom-dropdown"] {
-    label {
-      display: none;
+@media screen and (max-width: 44em) {
+  nav[role="full-horizontal"] {
+    ul > li {
+      width: 100%;
     }
   }
-
-  @media screen and (max-width: 44em) {
-    nav[role="custom-dropdown"] {
-      ul {
-        display: none;
-        height: 100%;
-      }
+}
   
-      label {
-        position: relative;
-        display: block;
-        width: 100%;
-      }
-  
-      label:after {
-          position: absolute;
-          content: "\2261";
-      }
-      
-      input:checked ~ ul {
-        display: block;
-      
-        > li {
-          width: 100%;
-        }        
-      }
-    }
-  }
-
 /* Header */
 
 header{
