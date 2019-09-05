@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JOSEPH ETIM'S CURRICULUM VITAE</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding-left: 3em;
+            padding-top: 1em;
+            background-color : white;
+        }
+        #main {
+            float: left;
+            width: 50%;
+            padding 5px;
+            background: none;
+        }
+        h3 {
+            color: #3393ff;
+        }
+        p {
+            white-space: pre-line;
+        }
+        ul {
+            white-space: pre-line;
+        }
+        #sidebar {
+            float: right;
+            width: 45%;
+            padding: 5px;
+            background: none;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            float: right;
+            padding-right: 5em;
+        }
+
+        div#form {
+            margin-top: auto;
+            padding: 50px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            box-sizing: border-box;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            background: #467e80
+        }
+        #form h2 {
+            margin: 0 0 40px;
+            padding: 0;
+            color: #f7497d;
+            text-transform: uppercase;
+            text-align: center;
+            }
+        #form input {
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+        #form textarea {
+            height: 80px;
+            padding: 10px 0;
+            margin-bottom: 40px;
+        }
+        #form input,#form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid #999;
+            background-color: rgb(227, 233, 235);
+        }
+        #form textarea {
+            margin-bottom: 20px;
+        }
+        #form input[type="submit"] {
+            border-bottom: none;
+            cursor: pointer;
+            background: #f7497d;
+            color: #fff;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+        #form form div {
+            position: relative;
+        }
+        #form form div label {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            color: rgb(8, 8, 8);
+            font-weight: bold;
+            transition: .5s;
+            pointer-events: none;
+        }
+        #form input:focus~label,#form textarea:focus~label,#form input:valid~label,#form textarea:valid~label {
+            top: -12px;
+            left: 0;
+            color: #1E90FF;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        #form input:focus,#form textarea:focus,#form input:valid,#form textarea:valid {
+            border-bottom: 2px solid  #1E90FF;
+            }
+
+        <script>
+        function validateForm () {
+            let validName = document.forms["contact"]["name"].value;
+            let validMessage = document.forms["contact"]["message"].value;
+            if ( typeof validName != "string" || validName.length < 4 ) {
+                alert("Name must contain letter only and be at least 4 characters long");
+                return false;
+                } 
+                else if (validMessage.length < 20) {
+                    alert("You message should be at least 20 characters");
+                    return false;
+                    } 
+                    else {
+                        document.body.innerHTML = " ";
+                        document.body.setAttribute("class", "valid");
+                    }
+        }
+        </script>
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>ETIM JOSEPH OKON</h1>
+        <p>82 Independence Road, Ikot Idaha,
+            Ibiono Ibom LGA, Akwa Ibom State.</p>
+                <p><strong>Mobile:</strong> 07038092687
+                    <strong>Email:</strong><a href="mailto:josephaetim@gmail.com"> josephaetim@gmail.com</a>
+                </p>
+        <section>        
+            <h3>Achievements</h3>
+                <h4>Awards:</h4>
+                <ul>Recognition from NESREA, Enugu State Chapter</ul>
+                <ul>Service award from NASS, FUTO Chapter, Imo State.</ul>
+
+                <h4>Leadership:</h4>
+                <ul>Director of Information, ICT CDS, NYSC Enugu State</ul>
+                <ul>Director of Research, NASS, FUTO, Imo State.</ul>
+        </section>
+
+        <div>
+            <h3>Employment History</h3>
+            <p><strong>September 2017 – Current - Subject Teacher
+                Mathematics and Computer Science, Legend High School
+                Ikot Idaha, Ibiono Ibom LGA
+                Akwa Ibom State.</strong>
+            </p>
+            <p><strong>November 2014 – October 2015 - Subject Teacher
+                Mathematics, Queens School Enugu
+                Enugu State.</strong>
+            </p>
+            <p>Main duties performed:</p>
+            <ul>Prepared lesson plan for each week in a school term
+                which resulted in effective management of time.</ul>
+            <ul>Promoted the understanding of concepts by students for easy
+                assimilation.</ul>
+            <ul>Analysed over 2500 corps members’ evaluation forms
+                which resulted in proper coordination of corps members, etc.</ul>
+                
+            <p><strong>June, 2012 – December, 2012 - Planning, Research and Statistics
+                AKSA Service Commision, Uyo, Akwa Ibom State</strong>
+            </p>
+            <p>Main duties performed:</p>
+            <ul>Using MicrosoftOffice Excel to sort and chart financial
+                information.</ul>
+        </div>
+
+        <div>
+            <h3>References</h3>
+            <p><strong>Mr. William I. Osuji</strong>
+                Lecturer
+                Federal University of Technology, Owerri (FUTO)
+                Imo State
+                <strong>Mobile:</strong> 08035456931
+                <strong>Email:</strong><a href="mailto:oswil2001@yahoo.com"> oswil2001@yahoo.com</a>
+            </p>    
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <div>
+            <img src="https://res.cloudinary.com/pepjoe/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1566632346/IMG_20190820_005023_zgetuy.jpg">
+        <h3>Personal Profile</h3>
+        <p>Date of Birth: 7th May, 1992
+        <p>Gender: Male</p>
+        <p>Nationality: Nigerian</p>
+        </p>
+        </div>
+
+        <div style="margin-top: 85px;">
+            <h3>Education</h3>
+            <p><strong>Bachelor of Technology (B. TECH.) in Mathematics
+                Federal University of Technology, Owerri
+                November, 2008 – May, 2014</strong>
+            </p>
+            <p>Degree Classification: Second Class Honours Upper
+                Division (2<sup>1</sup>)</p>
+
+            <p><strong>School Certificate Examination (SSCE)
+                West Itam Secondary School, Ekit Itam II, Itu
+                September, 2001 – July 2007</strong>
+            </p>
+            <p>9 SSCE and 9 JSSCE Subjects</p>
+        </div>
+
+        <div style="margin-top: 85px;">
+            <h3>Skills:</h3>
+            <p><strong>Technical:</strong> Compiling Statistics, HTML and CSS</p>
+            <p><strong>Interpersonal:</strong> Collaboration</p>
+            <p><strong>Other:</strong> Adaptability</p>
+        </div>
+
+        <div style="margin-top: 80px;">
+            <h3>Hobbies and Interests</h3>
+            <p>Computer coding</p>
+            <p>Football</p>
+            <p>Racing</p>
+        </div>
+
+        <div style="margin-top: 80px;">
+            <p>
+                <strong>Mr. Victor Irhiaebholo</strong>
+                Assistant Branch Manager/CIT officer
+                Access Bank Plc, Uyo
+                Akwa Ibom State
+                <strong>Mobile:</strong> 07033093241
+                <strong>Email:</strong><a href="mailto:irhiae@yahoo.com"> irhiae@yahoo.com</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+    <div id="form" style="margin-top: 1150px;">
+        <h2>Contact Me</h2>
+        <h4>Feel free to get in touch with me by filling the form below.</h4>
+        <form name="contact" method="POST"   action="" onsubmit="return validateForm()">
+            <div>
+                <label for="">Name:</label>
+                <input type="text" name="name" placeholder="Your name" required="" min="4">
+            </div>
+            <div>
+                <label for="">Email:</label>
+                <input type="email" name="email" placeholder="Your email" required="">
+            </div>
+            <div>
+                <label for="">Title:</label>
+                <input type="text" name="title" placeholder="Your Subject" required=""><label for="">
+            </div>
+            <div>
+                <label for="">Message:</label>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message here" required=""></textarea>
+            </div>
+            <input type="submit" value="Send" id="button">
+        </form>
+        <?php
+        if(isset($_POST["submit"])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $title = $_POST['title'];
+        mail("receivers_mail_josephaetim@gmail.com", $title, $message);
+        echo "Your mail has been sent successfully! Thank you for contacting me";
+    }
+    </div>
+    </footer>
+</body>
+</html>
