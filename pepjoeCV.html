@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content='A written description of Joseph Etim' name='description'/>
+    <meta content='https://pepjoe.github.io/pepjoeCV.html' property='og:url'/>
+    <meta content='' property='og:title'/>
+    <meta content='Joseph Etim, Personal Profile, Achievements, Education, Employment History, Skills, Hobbies and Interests, References' name='keywords'/>
     <title>JOSEPH ETIM'S CURRICULUM VITAE</title>
     <style>
         html, body {
@@ -240,7 +244,7 @@
     <div id="form" style="margin-top: 1150px;">
         <h2>Contact Me</h2>
         <h4>Feel free to get in touch with me by filling the form below.</h4>
-        <form name="contact" method="POST"   action="" onsubmit="return validateForm()">
+        <form name="contact" method="POST"   action="pepjoeCV.php" onsubmit="return validateForm()">
             <div>
                 <label for="">Name:</label>
                 <input type="text" name="name" placeholder="Your name" required="" min="4">
@@ -259,14 +263,6 @@
             </div>
             <input type="submit" value="Send" id="button">
         </form>
-        <?php
-        if(isset($_POST["submit"])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $title = $_POST['title'];
-        mail("receivers_mail_josephaetim@gmail.com", $title, $message);
-        echo "Your mail has been sent successfully! Thank you for contacting me";
-    }
     </div>
     </footer>
 </body>
