@@ -1,10 +1,11 @@
 <?php
-    $name=$_POST['Name'];
-    $email=$_POST['Email'];
-    $title=$_POST['Title'];
-    $message=$_POST['Message'];
-    $both = "Name; ". $name . " ," ."Email: ". $email . " ,"."Title: ". $title." ,". "Message: ".$message;
-    $fp = fopen('file.txt', 'a');
-    fwrite($fp, $both);
-    fclose($fp);
+$name=$_POST['name'];
+$email=$_POST['email'];
+$title=$_POST['title'];
+$message=$_POST['message'];
+$fp = fopen("data.txt", "a");
+$savestring = $name . "," . $email . "," . $title. "," . $message . "n";
+fwrite($fp, $savestring);
+fclose($fp);
+echo "<h1>Your data has been saved in a text file!</h1>;
 ?>
