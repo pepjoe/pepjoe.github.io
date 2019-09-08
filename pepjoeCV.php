@@ -1,4 +1,5 @@
 <?php
+$myemail = 'josephaetim@gmail.com';
 if (isset($_POST['submit'])){
    $title = $_POST['title'];
    $name = $_POST['name'];
