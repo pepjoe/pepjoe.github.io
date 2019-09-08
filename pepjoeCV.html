@@ -7,7 +7,7 @@
     <meta content='A written description of Joseph Etim' name='description'/>
     <meta content='https://pepjoe.github.io/pepjoeCV.html' property='og:url'/>
     <meta content='' property='og:title'/>
-    <meta content='Joseph Etim, Personal Profile, Achievements, Education, Employment History, Skills, Hobbies and Interests, References' name='keywords'/>
+    <meta content='contact form, contact Joseph Etim, Personal Profile, Achievements, Education, Employment History, Skills, Hobbies and Interests, References' name='keywords'/>
     <title>JOSEPH ETIM'S CURRICULUM VITAE</title>
     <style>
         html, body {
@@ -109,27 +109,7 @@
         }
         #form input:focus,#form textarea:focus,#form input:valid,#form textarea:valid {
             border-bottom: 2px solid  #1E90FF;
-            }
-
-        <script>
-        function validateForm () {
-            let validName = document.forms["contact"]["name"].value;
-            let validMessage = document.forms["contact"]["message"].value;
-            if ( typeof validName != "string" || validName.length < 4 ) {
-                alert("Name must contain letter only and be at least 4 characters long");
-                return false;
-                } 
-                else if (validMessage.length < 20) {
-                    alert("You message should be at least 20 characters");
-                    return false;
-                    } 
-                    else {
-                        document.body.innerHTML = " ";
-                        document.body.setAttribute("class", "valid");
-                    }
         }
-        </script>
-
     </style>
 </head>
 <body>
@@ -264,6 +244,24 @@
             <input type="submit" value="Send" id="button">
         </form>
     </div>
+    <script>
+        function validateForm () {
+            let validName = document.forms["contact"]["name"].value;
+            let validMessage = document.forms["contact"]["message"].value;
+            if ( typeof validName != "string" || validName.length < 4 ) {
+                alert("Name must contain letter only and be at least 4 characters long");
+                return false;
+                } 
+                else if (validMessage.length < 20) {
+                    alert("You message should be at least 20 characters");
+                    return false;
+                    } 
+                    else {
+                        document.body.innerHTML = " ";
+                        document.body.setAttribute("class", "valid");
+                    }
+        }
+        </script>
     </footer>
 </body>
 </html>
