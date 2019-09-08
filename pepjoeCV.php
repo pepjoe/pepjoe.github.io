@@ -1,20 +1,10 @@
 <?php
-$myemail = 'josephaetim@gmail.com';
-if (isset($_POST['submit'])){
-   $title = $_POST['title'];
-   $name = $_POST['name'];
-   $email = $_POST['email'];
-   $message = $_POST['message'];
-   
-   echo "Name:".$_POST['name'] . '<br>';
-   echo "Email:".$_POST['email'] . '<br>';
-   echo "Title:".$_POST['title'] . '<br>';
-   echo "Message:".$_POST['message'] . '<br>';
-}
-
-function pre_r( $array) {
-    echo '<pre>';
-    print_r($array);
-    echo '</pre>';
-}
+    $name=$_POST['Name'];
+    $email=$_POST['Email'];
+    $title=$_POST['Title'];
+    $message=$_POST['Message'];
+    $both = "Name; ". $name . " ," ."Email: ". $email . " ,"."Title: ". $title." ,". "Message: ".$message;
+    $fp = fopen('file.txt', 'a');
+    fwrite($fp, $both);
+    fclose($fp);
 ?>
